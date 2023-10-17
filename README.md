@@ -37,9 +37,7 @@ Here is the API endpoints structure
 ## API File Structure
 Here is the API server file structure
 ```
-GDSC/
-   node_modules/
-
+tiketinAja/
    src/
       database.js # all about database file
       handler.js  # this file contains all function used by the API
