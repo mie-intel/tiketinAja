@@ -1,7 +1,7 @@
-# Tiketin Aja API
+# Tiketin-Aja API
 
 ## Overview
-Welcome to Tiketin Aja's API! You can use this API to manage film's tickets sales. You can add several user account and also add several film into this API. 
+Welcome to Tiketin-Aja API! You can use this API to manage film's tickets sales. You can add several user account and also add several film into this API. 
 
 ## API Feature
 There are several feature provided by this API
@@ -38,6 +38,8 @@ Here is the API endpoints structure
 Here is the API server file structure
 ```
 tiketinAja/
+   node_modules/
+
    src/
       database.js # all about database file
       handler.js  # this file contains all function used by the API
