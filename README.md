@@ -14,6 +14,9 @@ There are several feature provided by this API
 > - Top up some money to a specified user account
 > - Delete an user account
 
+## API hostname
+https://tiketin-aja.cyclic.app/
+
 ## API endpoints structure
 Here is the API endpoints structure
 
