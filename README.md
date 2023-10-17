@@ -115,7 +115,7 @@ This feature has the following arguments
 
 Then, the following command is an example on how to use it using ``curl`` command
 >```
-> curl -X GET localhost:5000 -i 
+> curl -X GET https://tiketin-aja.cyclic.app -i 
 >```
 
 ### Add a new film
@@ -137,7 +137,7 @@ This feature has the following arguments
 
 Then, the following command is an example on how to use it using ``curl`` command
 >```
-> curl -X POST -H "Content-Type: application/json" http://localhost:5000/film/add -d "{\"data\": {\"title\":\"Titanic\", \"price\": \"4000\", \"amountOfSeat\" : \"7\"}}"  -i
+> curl -X POST -H "Content-Type: application/json" http://https://tiketin-aja.cyclic.app/film/add -d "{\"data\": {\"title\":\"Titanic\", \"price\": \"4000\", \"amountOfSeat\" : \"7\"}}"  -i
 >```
 
 This will add a new film titled `Titanic` which ticket's price is `4000` and has `7` seats available
@@ -162,7 +162,7 @@ This feature has the following arguments
 
 Then, the following command is an example on how to use it using ``curl`` command
 >```
-> curl -X PUT -H "Content-Type: application/json" http://localhost:5000/film/book -d "{\"data\": {\"name\":\"mie-intel\", \"title\": \"Titanic\", \"seatNumber\": \"1\"}}"  -i
+> curl -X PUT -H "Content-Type: application/json" http://https://tiketin-aja.cyclic.app/film/book -d "{\"data\": {\"name\":\"mie-intel\", \"title\": \"Titanic\", \"seatNumber\": \"1\"}}"  -i
 >```
 
 ### Show all registered user
@@ -178,7 +178,7 @@ This feature has the following arguments
 
 Then, the following command is an example on how to use it using ``curl`` command
 >```
-> curl -X GET localhost:5000/user
+> curl -X GET https://tiketin-aja.cyclic.app/user
 >```
 This will return a json object that contain all user account detail
 
@@ -195,12 +195,12 @@ This feature has the following arguments
 
 Then, the following command is an example on how to use it using ``curl`` command
 >```
-> curl -X GET localhost:5000/user/mie-intel
+> curl -X GET https://tiketin-aja.cyclic.app/user/mie-intel
 >```
 This will return a json object that contain all ``mie-intel``'s account detail
 
 >```
-> curl -X GET localhost:5000/user/mie-dummy
+> curl -X GET https://tiketin-aja.cyclic.app/user/mie-dummy
 >```
 This will return a json object that contain all ``mie-dummy``'s account detail
 
@@ -223,7 +223,7 @@ This feature has the following arguments
 >```
 Then, the following command is an example on how to use it using ``curl`` command
 >```
-> curl -X POST localhost:5000/user/create -H "Content-Type: application/json" -d "{\"data\": {\"name\":\"mie-intel\"}}" -i 
+> curl -X POST https://tiketin-aja.cyclic.app/user/create -H "Content-Type: application/json" -d "{\"data\": {\"name\":\"mie-intel\"}}" -i 
 >```
 
 This will create a user with the name ``mie-intel`` that has ``0`` amount of money
@@ -248,7 +248,7 @@ This feature has the following arguments
 Then, the following command is an example on how to use it using ``curl`` command
 
 >```
-> curl -X PUT -H "Content-Type: application/json" http://localhost:5000/user/topup -d "{\"data\": {\"name\":\"mie-intel\", \"addMoney\": \"5000\"}}" -i 
+> curl -X PUT -H "Content-Type: application/json" http://https://tiketin-aja.cyclic.app/user/topup -d "{\"data\": {\"name\":\"mie-intel\", \"addMoney\": \"5000\"}}" -i 
 >```
 
 This will add ``5000`` to the ``mie-intel``'s account
@@ -272,7 +272,7 @@ This feature has the following arguments
 Then, the following command is an example on how to use it using ``curl`` command
 
 >```
-> curl -X DELETE localhost:5000/user/delete -H "Content-Type: application/json" -d "{\"data\": {\"name\":\"mie-intel\"}}" -i 
+> curl -X DELETE https://tiketin-aja.cyclic.app/user/delete -H "Content-Type: application/json" -d "{\"data\": {\"name\":\"mie-intel\"}}" -i 
 >```
 
 This will delete `mie-intel`'s account and unbooked every seat that is booked by `mie-intel`
