@@ -44,6 +44,7 @@ tiketinAja/
       routes.js   # this file contains every routing of the API
       server.js   # this file is where the main server run
 
+   .gitignore
    package-lock.json
    package.json
    README.md
@@ -130,7 +131,8 @@ This feature has the following arguments
 >     body: {
 >         data: {
 >             title : <filmTitle>,
->             price: <filmPrice>
+>             price: <filmPrice>,
+>             amountofSeat: <filmSeat>
 >         }
 >     }
 > }
